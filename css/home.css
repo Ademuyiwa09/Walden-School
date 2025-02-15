@@ -1,0 +1,103 @@
+.bg-img {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index:  -100;
+}
+.bg-img::before {
+  content: '';
+  background-image: url(../images/bg-img/bg-light.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.5;
+  z-index: -20;
+}
+.header {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .logo-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo-name span {
+  font-size: 1.2rem;
+}
+.header nav {
+  display: flex;
+  gap: 8px;
+}
+.header nav a {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.header a:hover {
+  opacity: .7;
+}
+.main {
+  text-align: center;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin:  20vh 0;
+}
+.main h1 {
+  line-height: 1.2;
+  font-size: 2.2rem;
+}
+.main p {
+  max-width: 70ch;
+  font-weight: 600;
+}
+.main button {
+  background: transparent;
+  cursor: pointer;
+  border: 2px solid;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: .5em;
+  border-radius: 10px;
+  margin-top: 50px;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.5s;
+}
+.main button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.main button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.main button:hover span {
+  padding-right: 25px;
+}
+.main button:hover span:after {
+  opacity: 1;
+  right: 0;
+}

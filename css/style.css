@@ -1,13 +1,4 @@
-@import "./output.css";
-@tailwind utilities;
 @import url(./home.css);
-@import url(./main-page.css);
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
 .merriweather {
   font-family: "Merriweather";
 }

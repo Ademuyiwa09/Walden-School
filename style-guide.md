@@ -1,10 +1,11 @@
 ### Primary
 
-- Orange: hsl(26, 100%, 55%)
-- Pale orange: hsl(25, 100%, 94%)
-- Light Red (input::focus): hsl(0, 100%, 63%) 
-
+- Soft Blue: hsl(231, 69%, 60%)
+- white: #ffffff
+- Light gray: #f0f0f0
 ### Neutral
+
+- Lighter cyan: hsl(192, 50%, 15%)
 - Very Dark Cyan: hsl(192, 100%, 9%)
 
 ### Fonts
@@ -13,4 +14,3 @@
 
 ### Icons
 - Font awesome
-

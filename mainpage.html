@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.svg">
@@ -9,46 +8,72 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-  <!--Icons-->
-  <script src="https://kit.fontawesome.com/f3fda0719d.js" crossorigin="anonymous"></script>
   <!--Tailwind-->
   <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-  <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon">
+  <!--Icons-->
+  <script src="https://kit.fontawesome.com/f3fda0719d.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./css/main.css">
   <title>Walden Schools</title>
 </head>
 
 <body class="merriweather w-full max-w-none">
 
-  <header class="flex justify-between text-center items-center p-2.5 sm:p-3.5 lg:p-4.5 xl:p-5.5">
-    <img src="./images/logo.svg" alt="">
-    <nav class="flex gap-3 duration-700 sm:gap-5 lg:gap-8">
-      <a href="./index.html" class="hover:opacity-50">Home</a>
-      <a href="#Admissions" class="hover:opacity-50">Admissions</a>
-      <a href="#About us" class="hover:opacity-50 transi">About us</a>
+  <header class="flex justify-between text-center items-center p-2.5 sm:p-3.5 lg:p-4.5 xl:p-5.5 hdr">
+    <a href="./index.html" class="flex items-center gap-4">
+      <img src="./images/logo.svg" alt="">
+      <span class="oswald">WALDEN HIGH SCHOOL</span>
+    </a>
+
+    <nav class="duration-700 nav-bar text-center">
+      <input type="checkbox" id="nav-toggle">
+      <label for="nav-toggle" class="navbar-burger cursor-pointer">
+        <i class="fa fa-bars"></i>
+      </label>
+      <ul class="navbar-menu">
+        <li class="mb-[.5em]"><a href="mainpage.html" class="active">Home</a></li>
+        <li class="mb-[.5em]"><a href="#About Us">About</a></li>
+        <li class="mb-[.5em]"><a href="admission.html">Admissions</a></li>
+        <li class="mb-[.5em]"><a href="contact-form.html">Contact</a></li>
+        <li class="mb-[.5em]"><a href="location.html">Location</a></li>
+      </ul>
+    
     </nav>
   </header>
 
-  <main class="main-sec">
+  <main class="main-sec pt-[70px]">
+    <!--Image Carousel-->
+    <div class="carousel mb-10">
+      <div class="carousel-inner">
+        <img src="./images/carousel/playground1.webp" alt="Playground">
+        <img src="./images/carousel/computer.webp" alt="Computer class">
+        <img src="./images/carousel/Lab.webp" alt="Lab">
+        <img src="./images/carousel/Classroom.webp" alt="Classroom">
+        <img src="./images/carousel/playground2.webp" alt="Playground">
+        <img src="./images/carousel/Cafeteria.webp" alt="Cafeteria">
+        <img src="./images/carousel/Library.webp" alt="Library">
+      </div>  
+    </div>
+
     <!--Hero Section-->
-    <section class="text-center mb-8 sm:flex">
-      <div class="p-2 flex flex-col items-center justify-center sm:w-[50%] sm:gap-[1rem]">
-        <h1 class="mb-2 text-4xl font-extrabold oswald"> Empowering Minds
+    <section class="text-center mb-8 sm:flex sm:items-center">
+      <div class="p-3 mb-2 text-left :w-[50%] sm:p-5 sm:text-left lg:p-7">
+        <h1 class="mb-2 text-4xl font-extrabold oswald sm:pb-2 lg:pb-4">      Empowering Minds
         </h1>
-        <p class="mb-2 font-semibold max-w-[80%] sm:text-[1.1rem]">
-          Preparing students for a bright future, equipped with skills, knowledge, and values and Fostering a love of learning, creativity, and critical thinking.
+        <p class="mb-2 font-semibold sm:max-w-[90%] sm:text-[1.1rem] sm:pb-2 lg:pb-3">
+          Preparing students for a bright future, equipped with skills, knowledge, and values and Fostering a love of learning, creativity, and critical thinking. Education is an essential part of our lives. We are nothing without knowledge, and education is what separates us from others. The main step to acquiring education is enrolling oneself in a school. 
         </p>
-        <button class="mb-2 font-semibold p-2 btn-hero text-white bg-[#5368df] rounded-md hover:text-[#00252e] duration-500 h1-btn ">Explore More</button>
+        <button class="mb-2 font-semibold p-2 btn-hero text-white bg-[#5368df] rounded-md hover:text-[#00252e] duration-500 h1-btn sm:p-3 lg:px-4.5">Explore More</button>
       </div>
       <img src="./images/avatar/classroom1.jpg" alt="" class="sm:w-[50%]">
     </section>
 
     <!--About us Section-->
     <section id="About us" class="text-white bg-dark-cyan mb-8 sm:flex sm:items-center">
-      <div class="p-3 mb-2 sm:w-[50%] sm:p-[1rem] sm:flex sm:flex-col sm:items-center sm:text-center">
-        <h2 class="mb-2 text-2xl font-bold oswald md:text-[1.5rem] xl:text-[2rem]">Quality Education and Holistic Development</h2>
+      <div class="p-3 mb-2 sm:w-[50%] sm:p-5 sm:flex sm:flex-col sm:text-left lg:p-7">
+        <h2 class="mb-2 text-2xl font-bold oswald md:text-[1.5rem] xl:text-[2rem] sm:pb-3">Quality Education and Holistic Development</h2>
         <p class="text-md max-w-[65ch]">
-          <strong>WALDEN</strong> a place of excellence, innovation, and learning. Our school is dedicated to nurturing young minds, fostering creativity, and building a strong foundation for future success.
+          <strong class="oswald text-xl">WALDEN</strong> a place of excellence, innovation, and learning. Our school is dedicated to nurturing young minds, fostering creativity, and building a strong foundation for future success.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione pariatur molestias eligendi et, odit omnis modi dolore voluptas dolores. Delectus, atque magni maxime earum sit expedita fugit quam voluptates nihil.
         </p>
       </div>
 
@@ -56,10 +81,10 @@
     </section>
 
     <!--School news and update Section-->
-    <section class="text-[#5368df] font-bold">
+    <section class="text-[#5368df] font-bold pt-3">
       <div class="flex items-center justify-between p-2 mb-4 sm:p-5">
-        <h2 class="text-[1.5rem] oswald sm:text-[2rem]">School News & Update</h2>
-        <a href="#" class="hover:opacity-30">
+        <h2 class="text-[1.3rem] oswald sm:text-[2rem] ">School News & Update</h2>
+        <a href="#" class="hover:opacity-30 pr-1 sm:pr-3 lg:pr-5>
           <span class="sm:text-[1.3rem]">View all news</span>
           <i class="fa-solid fa-arrow-right fa-bounce fa-sm" style="color: #5368df;"></i>
         </a>
@@ -105,7 +130,8 @@
 
     <!--Testimonials Section-->
     <section class="text-white bg-light-cyan p-3">
-      <h2 class="text-2xl oswald font-bold mb-6 sm:text-3xl sm:grid sm">
+      <h2 class="text-2xl oswald font-bold mb-6 sm:text-3xl text-center
+      sm:grid sm">
         Success Stories from Walden High School
       </h2>
 
@@ -115,8 +141,8 @@
           <div class="flex gap-3 items-center mb-3">
             <img src="./images/avatar/image-female1.jpg" alt="" class="rounded-full">
             <div class="blue font-bold opacity-80 oswald">
-              <p class="text-[17px]">Jen Cruz</p>
-              <p class="text-[13px]">Graduate</p>
+              <p class="text-lg sm:text-xl lg:text-2xl">Jen Cruz</p>
+              <p class="text-base">Graduate</p>
             </div>
           </div>
 
@@ -130,8 +156,8 @@
           <div class="flex gap-3 items-center mb-3">
             <img src="./images/avatar/image-male1.jpg" alt="" class="rounded-full">
             <div class="blue font-bold opacity-80 oswald">
-              <p class="text-[17px]">Mark Davis</p>
-              <p class="text-[13px]">Parent</p>
+              <p class="text-lg sm:text-xl lg:text-2xl">Mark Davis</p>
+              <p class="text-base">Parent</p>
             </div>
           </div>
 
@@ -145,8 +171,8 @@
           <div class="flex gap-3 items-center mb-3">
             <img src="./images/avatar/image-female2.jpg" alt="" class="rounded-full">
             <div class="blue font-bold opacity-80 oswald">
-              <p class="text-[17px]">Emily Patel</p>
-              <p class="text-[13px]">Graduate</p>
+              <p class="text-lg sm:text-xl lg:text-2xl">Emily Patel</p>
+              <p class="text-base">Graduate</p>
             </div>
           </div>
 
@@ -160,8 +186,8 @@
           <div class="flex gap-3 items-center mb-3">
             <img src="./images/avatar/image-female1.jpg" alt="" class="rounded-full">
             <div class="blue font-bold opacity-80 oswald">
-              <p class="text-[17px]">Sarah Taylor</p>
-              <p class="text-[13px]">Parent</p>
+              <p class="text-lg sm:text-xl lg:text-2xl">Sarah Taylor</p>
+              <p class="text-base">Parent</p>
             </div>
           </div>
 
@@ -175,8 +201,8 @@
           <div class="flex gap-3 items-center mb-3">
             <img src="./images/avatar/image-male3.jpg" alt="" class="rounded-full">
             <div class="blue font-bold opacity-80 oswald">
-              <p class="text-[17px]">David Lee</p>
-              <p class="text-[13px]">Graduate</p>
+              <p class="text-lg sm:text-xl lg:text-2xl">David Lee</p>
+              <p class="text-base">Graduate</p>
             </div>
           </div>
 
@@ -190,8 +216,8 @@
           <div class="flex gap-3 items-center mb-3">
             <img src="./images/avatar/image-female2.jpg" alt="" class="rounded-full">
             <div class="blue font-bold opacity-80 oswald">
-              <p class="text-[17px]">Karen Brown</p>
-              <p class="text-[13px]">Parent</p>
+              <p class="text-lg sm:text-xl lg:text-2xl">Karen Brown</p>
+              <p class="text-base">Parent</p>
             </div>
           </div>
 
@@ -206,19 +232,19 @@
     <!--Admission Section-->
     <section id="Admissions" class="blue font-semibold mb-5 sm:flex sm:items-center">
       <img src="./images/avatar/classroom3.jpg" alt="" class="sm:w-[50%]">
-      <div class="p-3 sm:w-[50%] sm:px-[1rem]">
+      <div class="p-3 sm:w-[50%] sm:px-4 lg:px-5 xl:px-6.5">
         <h2 class="oswald text-2xl mb-5 sm:text-[1.8rem]">
           Become a Part of Walden
         </h2>
         <p class="leading-[1.4] mb-3 sm:text-[1.2rem] sm:mb-[2rem] opacity-60">
           Take the first step towards a brighter future. Ready to unlock your potential in 2025? Apply for Admission today!
         </p>
-        <button class="rounded-sm px-[1.3em] text-[1rem] py-[.7em] btn-join text-center duration-500 hover:text-[#00252e] sm:text-[1.2rem] md:text-[1.3rem]">Join us</button>
+        <button class="rounded-sm px-[1.3em] text-[1rem] py-[12px] btn-join text-center duration-500 hover:text-[#00252e] sm:text-[1.2rem] md:text-[1.3rem]"><a href="/admission.html">Join Us</a></button>
       </div>
     </section>
 
     <!--News letter - Subscribe Section-->
-    <section class="bg-[#ffffff] mb-6 p-3 font-semibold sm:flex sm:flex-col sm:items-center sm:justify-center sm:text-center">
+    <section class="bg-[#ffffff] mb-6 p-3 font-semibold sm:flex sm:flex-col sm:items-center sm:justify-center sm:text-center sm:pt-4.5 xl:pt-7.5">
       <h2 class="text-2xl oswald mb-4 sm:text-3xl">
         Stay Informed
       </h2>
@@ -236,42 +262,33 @@
     
   </main>
 
-  <footer class="text-white">
-    <div class="footer px-3 pt-[20px] sm:px-[1.5rem]">
+  <footer class="text-white footer-bg px-5 pt-10 pb-8 flex flex-col gap-8">
 
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="65" height="40" viewBox="0 0 65 40" class="brightness-0 invert">
-        <image xlink:href="data:image/png;base64,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" x="0" y="0" width="65" height="40"/>
-      </svg>
-
-      <div class="flex flex-col gap-[25px] sm:flex-row sm:justify-between sm:pb-[30px]">
-
-        <!--Phone and email-->
-        <div class="pt-[15px] oswald  sm:gap-[.8rem]">
-          <div class="flex gap-3 items-center text-[18px] ">
-            <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
-            <p>123-456-7890</p>
-          </div>
-          <div class="flex gap-3 items-center text-[18px]">
+    <div class="gap-8 md:flex md:justify-center md:flex-col">
+    <!--Logo, address and icons-->
+      <div class="flex flex-col gap-6 sm:gap-7 oswald sm:flex-row sm:justify-center sm:mb-9 lg:mb-11 sm:gap-x-12 lg:gap-x-30">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="65" height="40" viewBox="0 0 65 40" class="brightness-0 invert">
+          <image xlink:href="data:image/png;base64,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" x="0" y="0" width="65" height="40"/>
+        </svg>
+      
+        <div class="oswald flex flex-col gap-2 sm:gap-3">
+          <p class="flex items-center gap-4">
+            <i class="fa-solid fa-phone" style="color: #ffffff"></i>
+              <span>123-456-7890</span>
+          </p>
+          <p class="flex items-center gap-4">
             <i class="fa-regular fa-envelope" style="color: #ffffff;"></i>
-            <p>
-              waldenschools@gmail.com
-            </p>
-          </div>
+              <span>
+                waldenschools@gmail.com
+              </span>
+          </p>
+          <p class="flex items-center gap-4">
+            <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+              <span>123, St Micheal Avenue, Lagos</span>
+          </p>
         </div>
-  
-          <!--Links-->
-        <div class="flex flex-col sm:gap-[5px]">
-          <a href="#" class="hover:opacity-65">Admissions</a>
-          <a  href="#" class="hover:opacity-65">Contact</a>
-          <a  href="#" class="hover:opacity-65">Location</a>
-          <a  href="#" class="hover:opacity-65">About us</a>
-          <a  href="#" class="hover:opacity-65">News</a>
-          <a  href="#" class="hover:opacity-65">Events</a>
-          <a  href="#" class="hover:opacity-65">Achievements</a>
-        </div>
-  
-          <!--social media icons-->
-        <div class="mb-5 flex items-center justify-between max-w-[200px] sm:max-w-none sm:flex-col sm:gap-[.8rem] sm:px-[1.5rem] lg:flex-row lg:gap-[20px]">
+        
+        <div class="flex gap-4 items-center">
           <a href="#" class="hover:opacity-50 hover:scale-110 transition-transform duration-700">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg">
               <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#ffffff" d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/>
@@ -293,16 +310,44 @@
             </svg>
           </a>
         </div>
+      </div>
 
-      </div> 
-
+      <!--Links-->
+      <div class="flex flex-col lg:flex-row gap-3 sm:flex-row sm:justify-between lg:px-12 lg:pb-8">
+        <p class="flex flex-col gap-1">
+          <a href="#">Admissions</a>
+          <a href="#">Blog</a>
+          <a href="#">Projects</a>
+          <a href="#">Curriculum</a>
+        </p>
+        <p class="flex flex-col gap-1">
+          <a href="#">News</a>
+          <a href="#">Events</a>
+          <a href="#">Alumni</a>
+          <a href="#">Employments</a>
+        </p>
+        <p class="flex flex-col gap-1">
+          <a href="#">News</a>
+          <a href="#">Events</a>
+          <a href="#">Alumni</a>
+          <a href="#">Employments</a>
+        </p>
+        <p class="flex flex-col gap-1">
+          <a href="#">Contact Us</a>
+          <a href="#">About Us</a>
+          <a href="#">Location</a>
+          <a href="#">Terms of use</a>
+        </p>
+      </div>
+    </div>
+      <!--Copyright-->
+    <div class="oswald flex flex-col gap-2 sm:flex-row sm:justify-between">
+        <p>Copyright &copy; 2025, Walden School</p>
+        <p>Terms and Service &middot; Privacy Policy</p>
     </div>
 
-    <div class="flex flex-col p-3 bg-light-cyan oswald sm:flex-row sm:justify-between">
-      <p>Copyright &copy; 2025 Walden High School</p>
-      <p>Terms and Privacy Policy</p>
-    </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>

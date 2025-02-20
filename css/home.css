@@ -41,6 +41,9 @@
 .logo-name span {
   font-size: 1.2rem;
 }
+.home-paragraph {
+  font-size: 1.2rem;
+}
 .header nav {
   display: flex;
   gap: 8px;
@@ -62,15 +65,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 5px;
   margin:  20vh 0;
 }
-.main h1 {
+.main .home-h1 {
   line-height: 1.2;
   font-size: 2.2rem;
 }
 .main p {
   max-width: 70ch;
+  line-height: 1.6;
   font-weight: 600;
 }
 .main button {

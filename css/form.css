@@ -24,7 +24,7 @@
   border-radius: 10px;
   margin-bottom: 20px;
 }
-.contact input, textarea, button {
+.contact input, textarea, .button {
   box-shadow: 0 0 7px 0 hsl(0, 0%, 67%);
   padding: 5px 10px;
   border-radius: 5px;
@@ -44,7 +44,7 @@
 .contact input:focus, textarea:focus {
   border: 2px solid;
 }
-.contact button {
+.contact .button {
   display: flex;
   color: white;
   gap: 5px;
